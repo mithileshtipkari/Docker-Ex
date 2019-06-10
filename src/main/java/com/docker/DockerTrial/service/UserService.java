@@ -3,23 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.docker.service;
+package com.docker.DockerTrial.service;
 
-import com.docker.repository.UserRepository;
+import com.docker.DockerTrial.model.User;
+import com.docker.DockerTrial.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.docker.model.User;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author mahima
  */
-public class UserService{
-    
+@Service
+public class UserService {
+
     @Autowired
     UserRepository userRepo;
-    
-    public User addUser(User user){
+
+    public User addUser(User user) {
         return userRepo.save(user);
     }
-    
+
 }

@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.docker.repository;
+package com.docker.DockerTrial.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import com.docker.model.User;
+import com.docker.DockerTrial.model.User;
 /**
  *
  * @author mahima
