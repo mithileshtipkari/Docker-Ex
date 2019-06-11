@@ -41,9 +41,10 @@ public class UserController {
         user.setLname(lname);
         User savedUser = userService.addUser(user);
         System.out.println("save user --> " + savedUser);
-        String response = "Hello " + fname + " " + lname + " Response received on : " + new Date();
+        String response = "Hello " + fname + " " + lname;
         System.out.println(response);
-        modelAndView.addObject("Message", response);
+        modelAndView.addObject("msg","Response received on : " + new Date());
+        modelAndView.addObject("message", response);
         modelAndView.setViewName("index");
         return modelAndView;
     }

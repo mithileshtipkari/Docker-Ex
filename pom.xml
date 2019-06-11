@@ -68,7 +68,6 @@
                             <goal>unpack</goal>
                         </goals>
                         <configuration>
-                            <dockerHost>https://10.208.35.119:2376</dockerHost>
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>${project.groupId}</groupId>
